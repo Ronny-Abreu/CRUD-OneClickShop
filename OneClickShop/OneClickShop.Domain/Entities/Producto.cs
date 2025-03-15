@@ -1,6 +1,6 @@
-﻿namespace OneClickShop.Domain
+﻿namespace OneClickShop.Domain.Entities
 {
-    public class Class1
+    public class Producto
     {
 
     }
