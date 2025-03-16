@@ -5,11 +5,11 @@ using Microsoft.AspNetCore.Mvc;
 [ApiController]
 [Route("api/[controller]")]
 
-public class ProductoControllers : ControllerBase
+public class ProductoController : ControllerBase
 {
     private readonly ProductoService _service;
 
-    public ProductoControllers(ProductoService service)
+    public ProductoController(ProductoService service)
     {
         _service = service;
     }
