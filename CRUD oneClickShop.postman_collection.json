@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "f71f1a8f-9d77-4f63-9cb4-edafc1329063",
+		"name": "CRUD oneClickShop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39894310"
+	},
+	"item": [
+		{
+			"name": "Ver todos los productos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7200/api/producto",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7200",
+					"path": [
+						"api",
+						"producto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear un producto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"nombre\": \"Iphone 16 Pro max\",\r\n        \"descripcion\": \"Teléfono inteligente de gama alta lanzado por Apple en octubre de 2024. Es el mejor producto de apple hasta el momento.\",\r\n        \"precio\": 60000.00,\r\n        \"stock\": 9\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7200/api/producto",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7200",
+					"path": [
+						"api",
+						"producto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ver producto por id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7200/api/producto/5",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7200",
+					"path": [
+						"api",
+						"producto",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar producto por id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 8,\r\n        \"nombre\": \"Iphone 16 Pro max\",\r\n        \"descripcion\": \"Teléfono inteligente de gama alta lanzado por Apple en octubre de 2024. Es el mejor producto de apple hasta el momento.\",\r\n        \"precio\": 50000.00,\r\n        \"stock\": 9\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7200/api/producto/8",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7200",
+					"path": [
+						"api",
+						"producto",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7200/api/producto/8",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7200",
+					"path": [
+						"api",
+						"producto",
+						"8"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,6 @@
+@OneClickShop.Api_HostAddress = http://localhost:5187
+
+GET {{OneClickShop.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
